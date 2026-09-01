@@ -78,7 +78,7 @@ flowchart LR
 | 로그 검색·보존 | 동일 조건 검색/내보내기, 관리자 권한, 보존기간 삭제 | [AuditLogService](samples/operations-core/src/main/java/com/portfolio/writing/audit/AuditLogService.java) |
 | 게시글 입력 검증 | 제목·본문·첨부파일 정책을 도메인 규칙으로 분리 | [ContentPolicy](samples/operations-core/src/main/java/com/portfolio/writing/content/ContentPolicy.java) |
 
-자세한 담당 범위는 [기여 내역](docs/CONTRIBUTIONS.md), 처리 순서는 [구현 상세](docs/IMPLEMENTATION.md)에 정리했습니다.
+자세한 담당 범위는 [기여 내역](docs/CONTRIBUTIONS.md), 처리 순서는 [구현 상세](docs/IMPLEMENTATION.md), 기능과 코드의 연결은 [기능별 구현 근거](docs/FEATURE-MATRIX.md)에 정리했습니다.
 
 ## 기술 구성
 
