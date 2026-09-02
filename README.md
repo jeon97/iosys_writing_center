@@ -75,10 +75,13 @@ flowchart LR
 | 담당 기능 | 구현 방식 | 코드 |
 |---|---|---|
 | 로그인 통합 | 외부 인증 분리, 실패 횟수, 권한 확인, 중복 세션 교체 | [AuthenticationService](samples/operations-core/src/main/java/com/portfolio/writing/auth/AuthenticationService.java) |
+| 기관 SSO 세션 | 서명·만료 확인, 허용 이동 경로, 중복 세션 교체와 로그아웃 | [SsoSessionService](samples/operations-core/src/main/java/com/portfolio/writing/auth/SsoSessionService.java) |
 | 로그 검색·보존 | 동일 조건 검색/내보내기, 관리자 권한, 보존기간 삭제 | [AuditLogService](samples/operations-core/src/main/java/com/portfolio/writing/audit/AuditLogService.java) |
 | 게시글 입력 검증 | 제목·본문·첨부파일 정책을 도메인 규칙으로 분리 | [ContentPolicy](samples/operations-core/src/main/java/com/portfolio/writing/content/ContentPolicy.java) |
 
 자세한 담당 범위는 [기여 내역](docs/CONTRIBUTIONS.md), 처리 순서는 [구현 상세](docs/IMPLEMENTATION.md), 기능과 코드의 연결은 [기능별 구현 근거](docs/FEATURE-MATRIX.md)에 정리했습니다.
+
+기관 인증 연동의 경계와 보안 판단은 [기관 SSO와 세션 처리](docs/SSO-INTEGRATION.md)에 정리했습니다.
 
 ## 기술 구성
 
